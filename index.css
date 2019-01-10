@@ -1,0 +1,94 @@
+div,
+a,
+label
+{
+    font-family: Verdana;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+input[type='checkbox']
+{
+    display: none;
+}
+
+label
+{
+    background-color: lightgrey;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+img.cat
+{
+    border-radius: 10px;
+    height: 200px;
+    margin: 5px;
+    transition-property: transform;
+    transition-duration: .3s;
+}
+
+label:focus,
+section.cat:hover
+{
+    box-shadow: 1px 1px 10px rgba(0, 0, 1, .5);
+}
+
+section.cat img:hover
+{
+    transform: scale(1.1);
+}
+
+div.info
+{
+    display: none;
+}
+
+a
+{
+    color: gray;
+    font-weight: bold;
+    display: block;
+    transition-property: transform;
+    transition-duration: .3s;
+}
+
+a:hover
+{
+    transform: scale(1.5);
+}
+
+section.cat
+{
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+input:checked ~ section.cats .cat div:not([class='name'])
+{
+    display: block;
+    border-radius: 10px;
+    border: 2px solid lightgrey;
+    padding: 10px;
+}
+
+input:checked ~ section.cats .cat img
+{
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+}
+
+input:checked ~ section.cats section
+{
+    width: 40%;
+    display: block;
+    margin: 10px auto;
+}
